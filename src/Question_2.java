@@ -41,6 +41,9 @@ public class Question_2 {
 
 
         Collections.sort(employees,new MyComparator());
+
+        Collections.sort(employees, (e1,e2) -> (int) (e1.age - e2.age));
+
         System.out.println(employees.toString());
 
     }
